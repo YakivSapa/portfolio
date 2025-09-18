@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/portfolio-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="hero">
+        <svg id="hero-bg" viewBox="0 0 960 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <rect x="0" y="0" width="960" height="540" fill="#F3F3F3">
+            </rect>
+            <path d="M0 412L22.8 407.7C45.7 403.3 91.3 394.7 137 397C182.7 399.3 228.3 412.7 274 414.8C319.7 417 365.3 408 411.2 413.7C457 419.3 503 439.7 548.8 433.8C594.7 428 640.3 396 686 382.3C731.7 368.7 777.3 373.3 823 382.5C868.7 391.7 914.3 405.3 937.2 412.2L960 419L960 541L937.2 541C914.3 541 868.7 541 823 541C777.3 541 731.7 541 686 541C640.3 541 594.7 541 548.8 541C503 541 457 541 411.2 541C365.3 541 319.7 541 274 541C228.3 541 182.7 541 137 541C91.3 541 45.7 541 22.8 541L0 541Z" fill="#424b54" stroke-linecap="round" stroke-linejoin="miter">
+            </path>
+        </svg>
+        <div id="hero-content">
+            <header>
+                <div id="header-title">
+                    <span>Yakiv</span>
+                    <span>Sapa</span>
+                </div>
+                <div id="header-links">
+                    <a href="index.html" class="inactive-link">Home</a>
+                    <a id="active-link">Portfolio</a>
+                    <a href="certificates.html" class="inactive-link">Certificates</a>
+                    <a href="contact.html" class="inactive-link">Contact</a>
+                </div>
+                <div id="header-settings" class="hidden">
+                    <button id="settings-button" aria-label="Settings">
+                        <img src="styles/svg/settings.svg">
+                    </button>
+                    <div id="settings-menu">
+                        <div class="settings-submenu">
+                            <div>
+                                <img src="styles/svg/theme.svg">
+                                <h4>Theme</h4>
+                            </div>
+                            <button id="active-link">Light theme</button>
+                            <button class="inactive-link">Dark theme</button>
+                            <button class="inactive-link">Device default</button>
+                        </div>
+                        <hr>
+                        <div class="settings-submenu">
+                            <div>
+                                <img src="styles/svg/language.svg">
+                                <h4>Language</h4>
+                            </div>
+                            <button id="active-link">English</button>
+                            <button class="inactive-link">German</button>
+                            <button class="inactive-link">Polish</button>
+                            <button class="inactive-link">Ukrainian</button>
+                            <button class="inactive-link">Russian</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div id="main-title">
+                    <p>Projects</p>
+                </div>
+                <div id="projects-grid">
+                    <a class="card" 
+                    data-title="Wellness Platform"
+                    data-images='[
+                                    {"srcset":"styles/resources/wellnessPlatformPictures/300px/wellnessPlatformXS1.jpg 300w, styles/resources/wellnessPlatformPictures/400px/wellnessPlatformS1.jpg 400w, styles/resources/wellnessPlatformPictures/800px/wellnessPlatformM1.jpg 800w, styles/resources/wellnessPlatformPictures/1200px/wellnessPlatformL1.jpg 1200w, styles/resources/wellnessPlatformPictures/1600px/wellnessPlatformXL1.jpg 1600w"},
+                                    {"srcset":"styles/resources/wellnessPlatformPictures/300px/wellnessPlatformXS2.jpg 300w, styles/resources/wellnessPlatformPictures/400px/wellnessPlatformS2.jpg 400w, styles/resources/wellnessPlatformPictures/800px/wellnessPlatformM2.jpg 800w, styles/resources/wellnessPlatformPictures/1200px/wellnessPlatformL2.jpg 1200w, styles/resources/wellnessPlatformPictures/1600px/wellnessPlatformXL2.jpg 1600w"},
+                                    {"srcset":"styles/resources/wellnessPlatformPictures/300px/wellnessPlatformXS3.jpg 300w, styles/resources/wellnessPlatformPictures/400px/wellnessPlatformS3.jpg 400w, styles/resources/wellnessPlatformPictures/800px/wellnessPlatformM3.jpg 800w, styles/resources/wellnessPlatformPictures/1200px/wellnessPlatformL3.jpg 1200w, styles/resources/wellnessPlatformPictures/1600px/wellnessPlatformXL3.jpg 1600w"},
+                                    {"srcset":"styles/resources/wellnessPlatformPictures/300px/wellnessPlatformXS4.jpg 300w, styles/resources/wellnessPlatformPictures/400px/wellnessPlatformS4.jpg 400w, styles/resources/wellnessPlatformPictures/800px/wellnessPlatformM4.jpg 800w, styles/resources/wellnessPlatformPictures/1200px/wellnessPlatformL4.jpg 1200w, styles/resources/wellnessPlatformPictures/1600px/wellnessPlatformXL4.jpg 1600w"}
+                                ]'
+                    data-description="A website that was designed to help individuals achieve their weight loss and fitness goals."
+                    data-features="Creation of an account; Healthy lifestyle articles; Calorie calculator; BMI calculator; Food catalogue; Fitness planner; Language selector"
+                    data-frontend="HTML; CSS; Javascript"
+                    data-backend="PHP"
+                    data-libraries="Bootstrap; jQuery"
+                    data-database="MySQL"
+                    data-api=""
+                    data-website=""
+                    data-github="https://github.com/YakivSapa/Healthy-Lifestyle-Web-Service">
+                        <div class="card-image">
+                            <img src="styles/svg/project-svgs/healthy-lifestyle.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>Wellness Platform</p>
+                        </div>
+                    </a>
+                    <a class="card" 
+                    data-title="Expenses Tracker"
+                    data-images='[
+                                    {"srcset":"styles/resources/expensesTracker/300px/expensesTrackerXS1.jpg 300w, styles/resources/expensesTracker/400px/expensesTrackerS1.jpg 400w, styles/resources/expensesTracker/800px/expensesTrackerM1.jpg 800w, styles/resources/expensesTracker/1200px/expensesTrackerL1.jpg 1200w, styles/resources/expensesTracker/1600px/expensesTrackerXL1.jpg 1600w"},
+                                    {"srcset":"styles/resources/expensesTracker/300px/expensesTrackerXS2.jpg 300w, styles/resources/expensesTracker/400px/expensesTrackerS2.jpg 400w, styles/resources/expensesTracker/800px/expensesTrackerM2.jpg 800w, styles/resources/expensesTracker/1200px/expensesTrackerL2.jpg 1200w, styles/resources/expensesTracker/1600px/expensesTrackerXL2.jpg 1600w"},
+                                    {"srcset":"styles/resources/expensesTracker/300px/expensesTrackerXS3.jpg 300w, styles/resources/expensesTracker/400px/expensesTrackerS3.jpg 400w, styles/resources/expensesTracker/800px/expensesTrackerM3.jpg 800w, styles/resources/expensesTracker/1200px/expensesTrackerL3.jpg 1200w, styles/resources/expensesTracker/1600px/expensesTrackerXL3.jpg 1600w"},
+                                    {"srcset":"styles/resources/expensesTracker/300px/expensesTrackerXS4.jpg 300w, styles/resources/expensesTracker/400px/expensesTrackerS4.jpg 400w, styles/resources/expensesTracker/800px/expensesTrackerM4.jpg 800w, styles/resources/expensesTracker/1200px/expensesTrackerL4.jpg 1200w, styles/resources/expensesTracker/1600px/expensesTrackerXL4.jpg 1600w"},
+                                    {"srcset":"styles/resources/expensesTracker/300px/expensesTrackerXS5.jpg 300w, styles/resources/expensesTracker/400px/expensesTrackerS5.jpg 400w, styles/resources/expensesTracker/800px/expensesTrackerM5.jpg 800w, styles/resources/expensesTracker/1200px/expensesTrackerL5.jpg 1200w, styles/resources/expensesTracker/1600px/expensesTrackerXL5.jpg 1600w"}
+                    ]'
+                    data-description="An application for managing expenses."
+                    data-features="Filtration by year; Graphic charts"
+                    data-frontend="HTML; CSS; Javascript"
+                    data-backend=""
+                    data-libraries="React.JS"
+                    data-database=""
+                    data-api=""
+                    data-website=""
+                    data-github="https://github.com/YakivSapa/expense-tracker">
+                        <div class="card-image">
+                            <img src="styles/svg/project-svgs/expenses-tracker.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>Expenses Tracker</p>
+                        </div>
+                    </a>
+                    <a class="card" 
+                    data-title="Social Network"
+                    data-images='[
+                                    {"srcset":"styles/resources/socialNetwork/300px/socialNetworkXS1.jpg 300w, styles/resources/socialNetwork/400px/socialNetworkS1.jpg 400w, styles/resources/socialNetwork/800px/socialNetworkM1.jpg 800w, styles/resources/socialNetwork/1200px/socialNetworkL1.jpg 1200w, styles/resources/socialNetwork/1600px/socialNetworkXL1.jpg 1600w"},
+                                    {"srcset":"styles/resources/socialNetwork/300px/socialNetworkXS2.jpg 300w, styles/resources/socialNetwork/400px/socialNetworkS2.jpg 400w, styles/resources/socialNetwork/800px/socialNetworkM2.jpg 800w, styles/resources/socialNetwork/1200px/socialNetworkL2.jpg 1200w, styles/resources/socialNetwork/1600px/socialNetworkXL2.jpg 1600w"},
+                                    {"srcset":"styles/resources/socialNetwork/300px/socialNetworkXS3.jpg 300w, styles/resources/socialNetwork/400px/socialNetworkS3.jpg 400w, styles/resources/socialNetwork/800px/socialNetworkM3.jpg 800w, styles/resources/socialNetwork/1200px/socialNetworkL3.jpg 1200w, styles/resources/socialNetwork/1600px/socialNetworkXL3.jpg 1600w"},
+                                    {"srcset":"styles/resources/socialNetwork/300px/socialNetworkXS4.jpg 300w, styles/resources/socialNetwork/400px/socialNetworkS4.jpg 400w, styles/resources/socialNetwork/800px/socialNetworkM4.jpg 800w, styles/resources/socialNetwork/1200px/socialNetworkL4.jpg 1200w, styles/resources/socialNetwork/1600px/socialNetworkXL4.jpg 1600w"}
+                    ]'
+                    data-description="A social network that allows its users to communicate with each other."
+                    data-features="Creation of an account; Browsing other users' accounts; Creation of posts; Creation of commentaries; Live count of registered accounts"
+                    data-frontend="HTML; CSS; Typescript"
+                    data-backend=""
+                    data-libraries="React.JS"
+                    data-database=""
+                    data-api="https://social-network.samuraijs.com/docs"
+                    data-website=""
+                    data-github="https://github.com/YakivSapa/SocialNetwork">
+                        <div class="card-image">
+                            <img src="styles/svg/project-svgs/social-network.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>Social Network</p>
+                        </div>
+                    </a>
+                    <a class="card" 
+                    data-title="Currency Exchange"
+                    data-images='[
+                                    {"srcset":"styles/resources/currencyConverter/300px/currencyConverterXS1.jpg 300w, styles/resources/currencyConverter/400px/currencyConverterS1.jpg 400w, styles/resources/currencyConverter/800px/currencyConverterM1.jpg 800w, styles/resources/currencyConverter/1200px/currencyConverterL1.jpg 1200w, styles/resources/currencyConverter/1600px/currencyConverterXL1.jpg 1600w"},
+                                    {"srcset":"styles/resources/currencyConverter/300px/currencyConverterXS2.jpg 300w, styles/resources/currencyConverter/400px/currencyConverterS2.jpg 400w, styles/resources/currencyConverter/800px/currencyConverterM2.jpg 800w, styles/resources/currencyConverter/1200px/currencyConverterL2.jpg 1200w, styles/resources/currencyConverter/1600px/currencyConverterXL2.jpg 1600w"},
+                                    {"srcset":"styles/resources/currencyConverter/300px/currencyConverterXS3.jpg 300w, styles/resources/currencyConverter/400px/currencyConverterS3.jpg 400w, styles/resources/currencyConverter/800px/currencyConverterM3.jpg 800w, styles/resources/currencyConverter/1200px/currencyConverterL3.jpg 1200w, styles/resources/currencyConverter/1600px/currencyConverterXL3.jpg 1600w"}
+                    ]'
+                    data-description="A web application with live currency exchange rates."
+                    data-features="Live currency exchange rates; Currency exchange calculator"
+                    data-frontend="HTML; CSS"
+                    data-backend="PHP"
+                    data-libraries="Bootstrap"
+                    data-database=""
+                    data-api="https://api.nbp.pl"
+                    data-website=""
+                    data-github="https://github.com/YakivSapa/CurrencyConverter">
+                        <div class="card-image">
+                            <img src="styles/svg/project-svgs/currency-exchange.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>Currency Converter</p>
+                        </div>
+                    </a>
+                    <a class="card" 
+                    data-title="Weather Forecast"
+                    data-images='[
+                                    {"srcset":"styles/resources/weatherForecast/300px/weatherForecastXS1.jpg 300w, styles/resources/weatherForecast/400px/weatherForecastS1.jpg 400w, styles/resources/weatherForecast/800px/weatherForecastM1.jpg 800w, styles/resources/weatherForecast/1200px/weatherForecastL1.jpg 1200w, styles/resources/weatherForecast/1600px/weatherForecastXL1.jpg 1600w"},
+                                    {"srcset":"styles/resources/weatherForecast/300px/weatherForecastXS2.jpg 300w, styles/resources/weatherForecast/400px/weatherForecastS2.jpg 400w, styles/resources/weatherForecast/800px/weatherForecastM2.jpg 800w, styles/resources/weatherForecast/1200px/weatherForecastL2.jpg 1200w, styles/resources/weatherForecast/1600px/weatherForecastXL2.jpg 1600w"},
+                                    {"srcset":"styles/resources/weatherForecast/300px/weatherForecastXS3.jpg 300w, styles/resources/weatherForecast/400px/weatherForecastS3.jpg 400w, styles/resources/weatherForecast/800px/weatherForecastM3.jpg 800w, styles/resources/weatherForecast/1200px/weatherForecastL3.jpg 1200w, styles/resources/weatherForecast/1600px/weatherForecastXL3.jpg 1600w"},
+                                    {"srcset":"styles/resources/weatherForecast/300px/weatherForecastXS4.jpg 300w, styles/resources/weatherForecast/400px/weatherForecastS4.jpg 400w, styles/resources/weatherForecast/800px/weatherForecastM4.jpg 800w, styles/resources/weatherForecast/1200px/weatherForecastL4.jpg 1200w, styles/resources/weatherForecast/1600px/weatherForecastXL4.jpg 1600w"},
+                                    {"srcset":"styles/resources/weatherForecast/300px/weatherForecastXS5.jpg 300w, styles/resources/weatherForecast/400px/weatherForecastS5.jpg 400w, styles/resources/weatherForecast/800px/weatherForecastM5.jpg 800w, styles/resources/weatherForecast/1200px/weatherForecastL5.jpg 1200w, styles/resources/weatherForecast/1600px/weatherForecastXL5.jpg 1600w"}
+                    ]'
+                    data-description="A web application that provides users with up-to-date information on current weather conditions in a particular location."
+                    data-features="Up-to-date weather forecast on a selected region"
+                    data-frontend="HTML; CSS"
+                    data-backend="PHP"
+                    data-libraries="Bootstrap"
+                    data-database=""
+                    data-api="https://openweathermap.org/api"
+                    data-website=""
+                    data-github="https://github.com/YakivSapa/Weather-App">
+                        <div class="card-image">
+                            <img src="styles/svg/project-svgs/weather-forecast.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>Weather Forecast</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="modal">
+                    <div id="modal-content">
+                        <h2 id="modal-title"></h2>
+                        <div id="modal-carousel">
+                            <button id="modal-prevButton">&#10094;</button>
+                            <picture id="modal-picture">
+                                <img id="modal-img" src="" srcset="" alt="">
+                            </picture>
+                            <button id="modal-nextButton">&#10095;</button>
+                        </div>
+                        <div id="modal-description-box">
+                            <h4>Description:</h4>
+                            <p id="modal-description"></p>
+                        </div>
+                        <div id="modal-features-box">
+                            <h4>Features:</h4>
+                            <ul id="modal-features"></ul>
+                        </div>
+                        <div id="modal-informationContainer">
+                            <h4>Technical Information:</h4>
+                            <div id="modal-informationRows">
+                                <div id="modal-frontendContainer" class="modal-row">
+                                    <span>Frontend:</span>
+                                    <p id="modal-frontend"></p>
+                                </div>
+                                <div id="modal-backendContainer" class="modal-row">
+                                    <span>Backend:</span>
+                                    <p id="modal-backend"></p>
+                                </div>
+                                <div id="modal-librariesContainer" class="modal-row">
+                                    <span>Libraries:</span>
+                                    <p id="modal-libraries"></p>
+                                </div>
+                                <div id="modal-databaseContainer" class="modal-row">
+                                    <span>Database:</span>
+                                    <p id="modal-database"></p>
+                                </div>
+                                <div id="modal-apiContainer" class="modal-row">
+                                    <span>API:</span>
+                                    <p id="modal-api"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-links-box">
+                            <a href="#" class="inactive-link" id="modal-website">Link</a>
+                            <a href="#" class="inactive-link" id="modal-github">Github</a>
+                        </div>
+                    </div>
+                    <button class="close-button" id="closeModal">Close</button>
+                </div>
+            </main>
+        </div>
+        <footer class="light-text">
+            <p>© 2025 Yakiv Sapa. Built with HTML, CSS and JavaScript.</p>
+        </footer>
+    </section>
+    <script src="settings-script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>

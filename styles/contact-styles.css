@@ -1,0 +1,384 @@
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(svg/bg-home.svg);
+    font-family: 'DM Serif Text';
+    font-size: 18px;
+}
+#hero{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#hero-bg{
+    position: absolute;
+    inset: 0;         
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#hero-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+main {
+  flex: 1;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+
+/* General Styles */
+.inactive-link{
+    text-decoration: none;
+    color: hsla(210, 12%, 29%, 75%);
+}
+.inactive-link:hover{
+    color: hsla(210, 12%, 29%, 100%);
+}
+#active-link{
+    text-decoration: underline;
+}
+.light-text{
+    color: #f3f3f3;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Header Styles */
+header{
+    margin: 2em 1em 0 1em;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    align-items: center;
+    font-size: 1rem;
+}
+#header-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#header-links{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#header-settings{
+    display: flex;
+    justify-content: center;
+
+}
+#header-settings button{
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    font-family: 'DM Serif Text';
+}
+#settings-menu{
+    position: absolute;
+    padding: 5px;
+    flex-direction: column;
+    top: 9%;
+    right: 1em;
+    background-color: #ffffff;
+    border: 1px solid #868c91;
+    border-radius: 1em;
+
+    opacity: 0;
+    transform: translateY(-5px);
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease;
+}
+#settings-menu hr{
+    margin: 0.5em 0 0.5em 0;
+}
+#settings-menu.show{
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 20em;
+}
+.settings-submenu{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.settings-submenu div{
+    display: flex;
+}
+.settings-submenu h4{
+    margin: 0;
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+#settings-menu .settings-submenu:nth-child(1){
+    margin-bottom: 1em;
+}
+
+/* Main Styles */
+#main-title{
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+#main-title p{
+    margin: 0;
+}
+#contact-container{
+    padding: 0 2em;
+    display: grid;
+    grid-template-columns: 0.8fr;
+    gap: 1em;
+    justify-content: center;
+}
+#contact-mail a{
+    display: flex;
+    gap: 0.5em;
+}
+#contact-mail p{
+    margin: 0;
+}
+#contact-location a{
+    display: flex;
+    gap: 0.5em;
+}
+#contact-location p{
+    margin: 0;
+}
+#location-row{
+    display: flex;
+    justify-content: space-between;
+}
+#iframe{
+    margin: 1vh 0;
+    display: none;
+    width: 100%;
+    /* max-width: 80vw; */
+    /* height: 100%; */
+    border: 2px solid #868c91;
+}
+#closeButton{
+    display: none;
+    background-color: #868c91;
+    color: #424b54;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#contact-links{
+    display: flex;
+    gap: 0.5em;
+}
+#contact-vcard{
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    border: 1px solid #868c91;
+    border-radius: 1em;
+}
+#contact-vcard p{
+    margin: 0;
+}
+footer p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media(max-width: 350px) {
+    header{
+        font-size: 0.8rem;
+    }
+    #settings-button img, #contact-container img{
+        width: 20px;
+        height: 20px;
+    }
+    .settings-submenu{
+        font-size: 0.8rem;
+    }
+    .settings-submenu button{
+        font-size: 0.6rem;
+    }
+    .settings-submenu img{
+        height: 15px;
+        width: 15px;
+    }
+    #contact-container{
+        padding: 0 1em;
+    }
+    #contact-container p, #contact-container span{
+        font-size: 0.8rem;
+    }
+    #contact-vcard {
+        gap: 0.9em;
+    }
+    footer p{
+        margin: 2vw 10vw;
+        font-size: 0.6rem;
+    }
+}
+@media(max-width: 320px){
+    header{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 420px) {
+    #contact-container p, #contact-container span{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 375px){
+    header{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 390px){
+    #contact-container p, #contact-container span{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width: 500px){
+    header{
+        font-size: 1.3rem;
+    }
+    #settings-button img{
+        width: 30px;
+        height: 30px;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 600px) {
+    #contact-text p{
+        margin-top: 0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    #contact-vcard{
+        max-width: 40vw;
+    }
+    #contact-container{
+        grid-template-columns: 0.5fr;
+        margin-top: 5vh;
+    }
+    #contact-mail, #contact-location{
+        font-size: 1.4rem;
+    }
+    #contact-container img{
+        width: 30px;
+        height: 30px;
+    }
+    #contact-links{
+        gap: 3vw;
+    }
+    #contact-vcard{
+        margin-top: 1vh;
+    }
+}
+@media (min-height: 1000px) {
+    header{
+        font-size: 2rem;
+    }
+    #settings-button img{
+        width: 40px;
+        height: 40px;
+    }
+    #main-title{
+        font-size: 3rem;
+    }
+    #contact-text p{
+        font-size: 2rem;
+    }
+    #contact-mail, #contact-location{
+        font-size: 1.7rem;
+    }
+    #contact-container img{
+        width: 40px;
+        height: 40px;
+    }
+    #contact-vcard p{
+        font-size: 1.4rem;
+    }
+    footer p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1024px){
+    #header-title{
+        flex-direction: row;
+        gap: 0.5vw;
+    }
+}
+@media (min-width: 1440px){
+    header{
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+    }
+    #header-title{
+        font-size: 1.6rem;
+        justify-content: center;
+    }
+    #header-links{
+        font-size: 1.5rem;
+    }
+    #main-title p{
+        margin: 2vh 0;
+        font-size: 2.5rem;
+    }
+    #contact-vcard{
+        max-width: 25vw;
+    }
+    #contact-container{
+        grid-template-columns: 0.3fr;
+    }
+    #contact-links{
+        gap: 2vw;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 2560px){
+    #header-title{
+        font-size: 2.5rem;
+    }
+    #header-links{
+        font-size: 2rem;
+    }
+    #main-title p{
+        font-size: 3.5rem;
+    }
+    #contact-links{
+        gap: 1vw;
+    }
+    #contact-vcard{
+        max-width: 15vw;
+        justify-self: center;
+    }
+    footer p{
+        font-size: 1.7rem;
+    }
+}

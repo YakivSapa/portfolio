@@ -1,0 +1,456 @@
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Text';
+    font-size: 18px;
+}
+#hero{
+    position: relative;
+}
+#hero-bg{
+    position: absolute;
+    inset: 0;         
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#hero-content{
+    position: relative;
+}
+main {
+  flex: 1;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+/* General Styles */
+.inactive-link{
+    text-decoration: none;
+    color: hsla(210, 12%, 29%, 75%);
+}
+.inactive-link:hover{
+    color: hsla(210, 12%, 29%, 100%);
+}
+#active-link{
+    text-decoration: underline;
+}
+.light-text{
+    color: #f3f3f3;
+}
+.light-link{
+    color: hsla(0, 0%, 95%, 75%);
+}
+.light-link:hover{
+    color: hsla(0, 0%, 95%, 100%);
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Header Styles */
+header{
+    margin: 2em 1em 0 1em;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    align-items: center;
+    font-size: 1rem;
+}
+#header-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#header-links{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#header-settings{
+    display: flex;
+    justify-content: center;
+
+}
+#header-settings button{
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    font-family: 'DM Serif Text';
+}
+#settings-menu{
+    position: absolute;
+    padding: 5px;
+    flex-direction: column;
+    top: 2%;
+    right: 1em;
+    background-color: #ffffff;
+    border: 1px solid #868c91;
+    border-radius: 1em;
+
+    opacity: 0;
+    transform: translateY(-5px);
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease;
+}
+#settings-menu hr{
+    margin: 0.5em 0 0.5em 0;
+}
+#settings-menu.show{
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 20em;
+}
+.settings-submenu{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.settings-submenu div{
+    display: flex;
+}
+.settings-submenu h4{
+    margin: 0;
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+#settings-menu .settings-submenu:nth-child(1){
+    margin-bottom: 1em;
+}
+
+/* Main Styles */
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+#main-title p{
+    margin: 0;
+}
+#main-title p:nth-child(1){
+    text-decoration: underline;
+    text-underline-offset: 2vh;
+    text-decoration-thickness: 2px;
+    font-size: 2rem;
+}
+#main-title p:nth-child(2){
+    font-size: 3rem;
+}
+#main-description{
+    padding: 0 5vw;
+    text-align: center;
+}
+#down-arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20vh;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}   
+
+#main-content{
+    margin: 15vh 1rem 20vh 1rem;
+}
+#main-content h3{
+    text-align: center;
+}
+#main-content{
+    font-size: 1rem;
+}
+
+.knowledge-row{
+    margin: 0 0 1em 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    text-align: left;
+}
+.knowledge-row ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.knowledge-row p{
+    margin: 0;
+}
+.knowledge-row li{
+    display: inline;
+}
+/* .knowledge-row li:nth-child(n+2):before{
+    content: "|";
+    padding-right: ;
+} */
+
+#education-container div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#education-container div p{
+    margin: 0;
+    text-align: center;
+}
+#education-container div:nth-of-type(2){
+    margin-top: 1rem;
+    grid-template-columns: 0.2fr 0.5fr;
+    justify-content: center;
+}
+#education-container div:nth-of-type(3){
+    margin-bottom: 1rem;
+    grid-template-columns: 0.2fr 0.5fr;
+    justify-content: center;
+}
+#education-container div:nth-of-type(4){
+    display: block;
+}
+
+#languages-container div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+#languages-container div div{
+    display: grid;
+    grid-template-columns: 0.3fr 0.1fr 0.3fr;
+    text-align: center;
+}
+#languages-container div div p{
+    margin: 0 0 1em 0;
+}
+
+#main-links{
+    margin: 10vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5vw;
+}
+footer p{
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+}
+@media(max-width: 350px){
+    header{
+        font-size: 0.8rem;
+    }
+    #settings-button img{
+        width: 20px;
+        height: 20px;
+    }
+    .settings-submenu{
+        font-size: 0.8rem;
+    }
+    .settings-submenu button{
+        font-size: 0.6rem;
+    }
+    .settings-submenu img{
+        height: 15px;
+        width: 15px;
+    }
+    #main-title p:nth-child(1){
+        font-size: 1.5rem;
+    }
+    #main-title p:nth-child(2){
+        font-size: 2.5rem;
+    }
+    #main-description {
+        font-size: 1rem;
+    }
+    #main-content h3{
+        font-size: 0.9em;
+    }
+    #main-content p, #main-content li{
+        font-size: 0.7em;
+    }
+    #main-content p, #main-content li{
+        margin: 0;
+        padding: 0;
+    }
+    #main-links{
+        margin: 10vh 0;
+    }
+    #main-links a{
+        font-size: 0.9em;
+    }
+    footer p{
+        margin: 2vw 10vw;
+        font-size: 0.6rem;
+    }
+}
+@media(max-width: 375px){
+    #header-links{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 320px){
+    #header-links{
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 410px){
+    #main-content p, #main-content li{
+        font-size: 0.8em;
+    }
+}
+@media(min-width: 500px){
+    header{
+        font-size: 1.3rem;
+    }
+    #settings-button img{
+        width: 30px;
+        height: 30px;
+    }
+    #main-title p:nth-child(1){
+        font-size: 3rem;
+    }
+    #main-title p:nth-child(2){
+        font-size: 4rem;
+    }
+    #main-description{
+        font-size: 1.5rem;
+    }
+    #main-content h3{
+        font-size: 1.5em;
+    }
+    #main-content p, #main-content li{
+        font-size: 1.5em;
+    }
+    #main-links a{
+        font-size: 1.5em;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    
+    #down-arrow{
+        bottom: 10vh;
+    }
+    #down-arrow img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-height: 1000px) {
+    header{
+        font-size: 2rem;
+    }
+    #settings-button img{
+        width: 40px;
+        height: 40px;
+    }
+    #main-title p:nth-child(1){
+        font-size: 5rem;
+    }
+    #main-title p:nth-child(2){
+        font-size: 6rem;
+    }
+    #main-description{
+        font-size: 2.5rem;
+    }
+    #main-content{
+        margin: 15vh 5vw 20vh 5vw;
+        font-size: 1.2rem;
+    }
+    #down-arrow{
+        bottom: 22vh;
+    }
+    #down-arrow img{
+        width: 50px;
+        height: 50px;
+    }
+    #main-links, footer p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1024px){
+    #main-content{
+        margin: 15vh 20vw 20vh 20vw;
+    }
+    #header-title{
+        flex-direction: row;
+        gap: 0.5vw;
+    }
+}
+@media (min-width: 1440px){
+    header{
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+    }
+    #header-title{
+        font-size: 1.6rem;
+        justify-content: center;
+    }
+    #header-links{
+        font-size: 1.5rem;
+    }
+    #main-title p:nth-child(1){
+        font-size: 5rem;
+        text-underline-offset: 4vh;
+    }
+    #main-title p:nth-child(2){
+        font-size: 6rem;
+    }
+    #main-description{
+        font-size: 2rem;
+    }
+    #main-content{
+        margin: 15vh 25vw 20vh 25vw;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 2560px){
+    #header-title{
+        font-size: 2.5rem;
+    }
+    #header-links{
+        font-size: 2rem;
+    }
+    #main-title p:nth-child(1){
+        font-size: 8rem;
+        text-decoration-thickness: 3px;
+    }
+    #main-title p:nth-child(2){
+        font-size: 10rem;
+    }
+    #main-description{
+        font-size: 3rem;
+    }
+    #down-arrow{
+        bottom: 15vh;
+    }
+    #down-arrow img{
+        width: 60px;
+        height: 60px;
+    }
+    #main-content{
+        font-size: 1.5rem;
+        margin: 15vh 30vw 20vh 30vw;
+    }
+    #main-links, footer p{
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Yakiv Sapa
+TITLE:Web-Entwickler
+TEL;TYPE=work,voice:+4901728201934
+EMAIL:sapa.yakiv@gmail.com
+ADR;TYPE=work:;;Oberursel;61440;Germany
+URL:https://www.example.com
+END:VCARD
