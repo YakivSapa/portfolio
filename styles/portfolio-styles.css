@@ -206,7 +206,6 @@ footer p{
 #modal-carousel{
     position: relative;
     width: 100%;
-    max-width: 900px;
     aspect-ratio: 9/10;
     max-height: 30em;
     display: flex;
@@ -448,9 +447,6 @@ footer p{
         height: 15vh;
         width: 10vw;
     }
-    #modal-carousel{
-        max-width: 1200px;
-    }
     footer p{
         font-size: 1.2rem;
     }
@@ -466,7 +462,6 @@ footer p{
         font-size: 3.5rem;
     }
     #modal-carousel{
-        max-width: 3000px;
         max-height: 70vh;
     }
     #modal-features{
