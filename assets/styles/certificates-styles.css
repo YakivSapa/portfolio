@@ -17,12 +17,11 @@ html, body {
 body{
     display: flex;
     flex-direction: column;
-    background-image: url(svg/bg-home.svg);
     font-family: 'DM Serif Text';
     font-size: 18px;
 }
 #hero{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     position: relative;
@@ -35,16 +34,24 @@ body{
     z-index: -1;
 }
 #hero-content{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    position: relative;
+}
+.svg-mobile{ 
+    display: block;
+}
+.svg-desktop{
+    display: none;
 }
 main {
   flex: 1;
 }
-img{
+#header-settings img{
     width: 24px;
     height: 24px;
+}
+hr{
+    margin: 0;
+    border-bottom: 0.1em solid #868c91; width: 100%;
 }
 
 /* General Styles */
@@ -92,7 +99,6 @@ header{
 #header-settings button{
     text-align: left;
     text-decoration: none;
-    display: inline-block;
     border: none;
     background-color: transparent;
     font-family: 'DM Serif Text';
@@ -101,7 +107,7 @@ header{
     position: absolute;
     padding: 5px;
     flex-direction: column;
-    top: 9%;
+    top: 4%;
     right: 1em;
     background-color: #ffffff;
     border: 1px solid #868c91;
@@ -136,6 +142,14 @@ header{
 #settings-menu .settings-submenu:nth-child(1){
     margin-bottom: 1em;
 }
+.languageImg{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+.settings-submenu button{
+    display: flex;
+}
 
 /* Main Styles */
 #main-title{
@@ -146,63 +160,114 @@ header{
 #main-title p{
     margin: 0;
 }
-#contact-container{
-    padding: 0 2em;
+#certificates-grid{
+    margin: 1vh 0;
     display: grid;
     grid-template-columns: 0.8fr;
-    gap: 1em;
+    gap: 5vw;
     justify-content: center;
 }
-#contact-mail a{
-    display: flex;
-    gap: 0.5em;
-}
-#contact-mail p{
-    margin: 0;
-}
-#contact-location a{
-    display: flex;
-    gap: 0.5em;
-}
-#contact-location p{
-    margin: 0;
-}
-#location-row{
-    display: flex;
-    justify-content: space-between;
-}
-#iframe{
-    margin: 1vh 0;
-    display: none;
-    width: 100%;
-    /* max-width: 80vw; */
-    /* height: 100%; */
-    border: 2px solid #868c91;
-}
-#closeButton{
-    display: none;
-    background-color: #868c91;
-    color: #424b54;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-}
-#contact-links{
-    display: flex;
-    gap: 0.5em;
-}
-#contact-vcard{
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5em;
+.certificate-card{
+    justify-items: center;
     border: 1px solid #868c91;
     border-radius: 1em;
+    background-color: #ffffff;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#contact-vcard p{
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.card-preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    max-height: 30em;
+    object-fit: contain;
+    aspect-ratio: 9/10;
+    overflow: hidden;
+    border-bottom: 1px solid #868c91;
+}
+.card-preview img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.card-title p{
+    text-align: center;
     margin: 0;
 }
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+}
+#modal-content {
+    text-align: right;
+    max-width: 90%;
+    max-height: 90%;
+    background: #fff;
+    border-radius: 12px;
+    max-height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+#modal-carousel{
+    /* position: relative; */
+    /* width: 100%; */
+    /* max-width: 900px; */
+    /* max-height: 30em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#modal-img{
+    max-width: 100%;
+    max-height: 60vh;
+    border-radius: 8px;
+}
+#modal-title{
+    margin: 0;
+    border-top: 1px solid #868c91;
+    padding: 1vh 0;
+    text-align: center;
+}
+#modal-prevButton, #modal-nextButton{
+    position: relative;
+    top: 50%;
+    font-size: 2rem;
+    background: transparent;
+    color: #868c91;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+}
+#closeModal{
+    font-size: 2rem;
+    z-index: 2;
+    position: relative;
+    background: transparent;
+    color: #868c91; 
+    border: none;
+    cursor: pointer;
+}
+
 footer p{
     font-size: 0.8rem;
     text-align: center;
@@ -212,7 +277,7 @@ footer p{
     header{
         font-size: 0.8rem;
     }
-    #settings-button img, #contact-container img{
+    #settings-button img{
         width: 20px;
         height: 20px;
     }
@@ -226,37 +291,31 @@ footer p{
         height: 15px;
         width: 15px;
     }
-    #contact-container{
-        padding: 0 1em;
+    #modal-title{
+        font-size: 1rem;
     }
-    #contact-container p, #contact-container span{
+    .card-title p{
         font-size: 0.8rem;
     }
-    #contact-vcard {
-        gap: 0.9em;
-    }
     footer p{
+        color: #f3f3f3;
         margin: 2vw 10vw;
         font-size: 0.6rem;
-    }
-}
-@media(max-width: 320px){
-    header{
-        font-size: 0.7rem;
-    }
-}
-@media (max-width: 420px) {
-    #contact-container p, #contact-container span{
-        font-size: 1rem;
     }
 }
 @media(max-width: 375px){
     header{
         font-size: 0.8rem;
     }
+    .card-title p{
+        font-size: 0.9rem;
+    }
 }
-@media(max-width: 390px){
-    #contact-container p, #contact-container span{
+@media(max-width: 320px){
+    header{
+        font-size: 0.7rem;
+    }
+    .card-title p{
         font-size: 0.8rem;
     }
 }
@@ -268,35 +327,36 @@ footer p{
         width: 30px;
         height: 30px;
     }
+    .card-content p{
+        font-size: 1.4rem;
+    }
+    #modal-title{
+        font-size: 2.5rem;
+    }
+    #modal-content h4{
+        font-size: 2rem;
+    }
+    #modal-content p, #modal-content li, #modal-content span{
+        font-size: 1.5rem;  
+    }
     footer p{
         font-size: 1rem;
     }
-}
-@media (min-width: 600px) {
-    #contact-text p{
-        margin-top: 0;
-        font-size: 1.4rem;
-        text-align: center;
-    }
-    #contact-vcard{
-        max-width: 40vw;
-    }
-    #contact-container{
-        grid-template-columns: 0.5fr;
-        margin-top: 5vh;
-    }
-    #contact-mail, #contact-location{
-        font-size: 1.4rem;
-    }
-    #contact-container img{
-        width: 30px;
-        height: 30px;
-    }
-    #contact-links{
+}   
+@media(min-width: 720px){
+    #certificates-grid{
+        grid-template-columns: 0.5fr 0.5fr;
         gap: 3vw;
+        margin: 2vh 5vw;
     }
-    #contact-vcard{
-        margin-top: 1vh;
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-title p{
+        margin: 1vh 0;
+    }
+    #modal-img{
+        max-height: 70vh;
     }
 }
 @media (min-height: 1000px) {
@@ -310,24 +370,17 @@ footer p{
     #main-title{
         font-size: 3rem;
     }
-    #contact-text p{
+    .card-title{
         font-size: 2rem;
-    }
-    #contact-mail, #contact-location{
-        font-size: 1.7rem;
-    }
-    #contact-container img{
-        width: 40px;
-        height: 40px;
-    }
-    #contact-vcard p{
-        font-size: 1.4rem;
     }
     footer p{
         font-size: 1.5rem;
     }
 }
 @media (min-width: 1024px){
+    #modal-img{
+        max-height: 80vh;
+    }
     #header-title{
         flex-direction: row;
         gap: 0.5vw;
@@ -348,15 +401,6 @@ footer p{
         margin: 2vh 0;
         font-size: 2.5rem;
     }
-    #contact-vcard{
-        max-width: 25vw;
-    }
-    #contact-container{
-        grid-template-columns: 0.3fr;
-    }
-    #contact-links{
-        gap: 2vw;
-    }
     footer p{
         font-size: 1.2rem;
     }
@@ -371,12 +415,18 @@ footer p{
     #main-title p{
         font-size: 3.5rem;
     }
-    #contact-links{
-        gap: 1vw;
+    #certificates-grid{
+        justify-items: end;
     }
-    #contact-vcard{
-        max-width: 15vw;
-        justify-self: center;
+    .certificate-card:nth-of-type(even){
+        justify-self : start;
+    }
+    .certificate-card{
+        max-width: fit-content;
+    }
+    .card-preview{
+        max-width: fit-content;
+        max-height: 50em;
     }
     footer p{
         font-size: 1.7rem;

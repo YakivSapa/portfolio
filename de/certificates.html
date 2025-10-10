@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificates</title>
-    <link rel="stylesheet" href="styles/certificates-styles.css">
+    <link rel="stylesheet" href="../assets/styles/certificates-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
@@ -43,14 +43,14 @@
             <a id="active-link">Certificates</a>
             <a href="contact.html" class="inactive-link">Contact</a>
         </div>
-        <div id="header-settings" class="hidden">
+        <div id="header-settings">
             <button id="settings-button" aria-label="Settings">
-                <img src="styles/svg/settings.svg">
+                <img src="../assets/styles/svg/settings.svg">
             </button>
             <div id="settings-menu">
                 <div class="settings-submenu">
                     <div>
-                        <img src="styles/svg/theme.svg">
+                        <img src="../assets/styles/svg/theme.svg">
                         <h4>Theme</h4>
                     </div>
                     <button id="active-link">Light theme</button>
@@ -60,14 +60,14 @@
                 <hr>
                 <div class="settings-submenu">
                     <div>
-                        <img src="styles/svg/language.svg">
+                        <img src="../assets/styles/svg/language.svg">
                         <h4>Language</h4>
                     </div>
-                    <button id="active-link">English</button>
-                    <button class="inactive-link">German</button>
-                    <button class="inactive-link">Polish</button>
-                    <button class="inactive-link">Ukrainian</button>
-                    <button class="inactive-link">Russian</button>
+                    <button id="active-link"><img src="../assets/styles/svg/languages/flag-uk.svg" class="languageImg">English</button>
+                    <button onclick="window.location.href='../de/certificates.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-de.svg" class="languageImg">German</button>
+                    <button onclick="window.location.href='../pl/certificates.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-pl.svg" class="languageImg">Polish</button>
+                    <button onclick="window.location.href='../ua/certificates.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-ua.svg" class="languageImg">Ukrainian</button>
+                    <button onclick="window.location.href='../ru/certificates.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-ru.svg" class="languageImg">Russian</button>
                 </div>
             </div>
         </div>
@@ -78,41 +78,41 @@
         </div>
         <div id="certificates-grid">
             <div class="certificate-card" data-title="German B1 Certificate" data-images='[
-            {"srcset":"styles/resources/certificates/B1/b1XS.jpg 300w, styles/resources/certificates/B1/b1S.jpg 400w, styles/resources/certificates/B1/b1M.jpg 800w, styles/resources/certificates/B1/b1L.jpg 1200w, styles/resources/certificates/B1/b1XL.jpg 1600w"}
+            {"srcset":"../assets/styles/resources/certificates/B1/b1XS.jpg 300w, ../assets/styles/resources/certificates/B1/b1S.jpg 400w, ../assets/styles/resources/certificates/B1/b1M.jpg 800w, ../assets/styles/resources/certificates/B1/b1L.jpg 1200w, ../assets/styles/resources/certificates/B1/b1XL.jpg 1600w"}
             ]'>
                 <picture class="card-preview">
-                    <img srcset="styles/resources/certificates/B1/b1XS.jpg 300w, styles/resources/certificates/B1/b1S.jpg 400w, styles/resources/certificates/B1/b1M.jpg 800w, styles/resources/certificates/B1/b1L.jpg 1200w, styles/resources/certificates/B1/b1XL.jpg 1600w," alt="">
+                    <img srcset="../assets/styles/resources/certificates/B1/b1XS.jpg 300w, ../assets/styles/resources/certificates/B1/b1S.jpg 400w, ../assets/styles/resources/certificates/B1/b1M.jpg 800w, ../assets/styles/resources/certificates/B1/b1L.jpg 1200w, ../assets/styles/resources/certificates/B1/b1XL.jpg 1600w," alt="">
                 </picture>
                 <div class="card-title">
                     <p>German B1 Certificate</p>
                 </div>
             </div>
             <div class="certificate-card" data-title="University Diploma" data-images='[
-            {"srcset":"styles/resources/certificates/diploma/diplomaXS.jpg 300w, styles/resources/certificates/diploma/diplomaS.jpg 400w, styles/resources/certificates/diploma/diplomaM.jpg 800w, styles/resources/certificates/diploma/diplomaL.jpg 1200w, styles/resources/certificates/diploma/diplomaXL.jpg 1600w"}
+            {"srcset":"../assets/styles/resources/certificates/diploma/diplomaXS.jpg 300w, ../assets/styles/resources/certificates/diploma/diplomaS.jpg 400w, ../assets/styles/resources/certificates/diploma/diplomaM.jpg 800w, ../assets/styles/resources/certificates/diploma/diplomaL.jpg 1200w, ../assets/styles/resources/certificates/diploma/diplomaXL.jpg 1600w"}
             ]'>
                 <picture class="card-preview">
-                    <img srcset="styles/resources/certificates/diploma/diplomaXS.jpg 300w, styles/resources/certificates/diploma/diplomaS.jpg 400w, styles/resources/certificates/diploma/diplomaM.jpg 800w, styles/resources/certificates/diploma/diplomaL.jpg 1200w, styles/resources/certificates/diploma/diplomaXL.jpg 1600w" alt="">
+                    <img srcset="../assets/styles/resources/certificates/diploma/diplomaXS.jpg 300w, ../assets/styles/resources/certificates/diploma/diplomaS.jpg 400w, ../assets/styles/resources/certificates/diploma/diplomaM.jpg 800w, ../assets/styles/resources/certificates/diploma/diplomaL.jpg 1200w, ../assets/styles/resources/certificates/diploma/diplomaXL.jpg 1600w" alt="">
                 </picture>
                 <div class="card-title">
                     <p>University Diploma</p>
                 </div>
             </div>
             <div class="certificate-card" data-title="Diploma evaluation" data-images='[
-            {"srcset":"styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XS.jpg 300w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1S.jpg 400w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1M.jpg 800w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1L.jpg 1200w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XL.jpg 1600w"},
-            {"srcset":"styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2XS.jpg 300w, styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2S.jpg 400w, styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2M.jpg 800w, styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2L.jpg 1200w, styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2XL.jpg 1600w"}
+            {"srcset":"../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XS.jpg 300w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1S.jpg 400w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1M.jpg 800w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1L.jpg 1200w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XL.jpg 1600w"},
+            {"srcset":"../assets/styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2XS.jpg 300w, ../assets/styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2S.jpg 400w, ../assets/styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2M.jpg 800w, ../assets/styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2L.jpg 1200w, ../assets/styles/resources/certificates/zeugnisbewertung/secondPage/zeugnisbewertung2XL.jpg 1600w"}
             ]'>
                 <picture class="card-preview">
-                    <img srcset="styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XS.jpg 300w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1S.jpg 400w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1M.jpg 800w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1L.jpg 1200w, styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XL.jpg 1600w" alt="">
+                    <img srcset="../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XS.jpg 300w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1S.jpg 400w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1M.jpg 800w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1L.jpg 1200w, ../assets/styles/resources/certificates/zeugnisbewertung/firstPage/zeugnisbewertung1XL.jpg 1600w" alt="">
                 </picture>
                 <div class="card-title">
                     <p>Diploma evaluation</p>
                 </div>
             </div>
             <div class="certificate-card" data-title="Full-stack course" data-images='[
-            {"srcset":"styles/resources/certificates/fullstack/fullstackXS.jpg 300w, styles/resources/certificates/fullstack/fullstackS.jpg 400w, styles/resources/certificates/fullstack/fullstackM.jpg 800w, styles/resources/certificates/fullstack/fullstackL.jpg 1200w, styles/resources/certificates/fullstack/fullstackXL.jpg 1600w"}
+            {"srcset":"../assets/styles/resources/certificates/fullstack/fullstackXS.jpg 300w, ../assets/styles/resources/certificates/fullstack/fullstackS.jpg 400w, ../assets/styles/resources/certificates/fullstack/fullstackM.jpg 800w, ../assets/styles/resources/certificates/fullstack/fullstackL.jpg 1200w, ../assets/styles/resources/certificates/fullstack/fullstackXL.jpg 1600w"}
             ]'>
                 <picture class="card-preview">
-                    <img srcset="styles/resources/certificates/fullstack/fullstackXS.jpg 300w, styles/resources/certificates/fullstack/fullstackS.jpg 400w, styles/resources/certificates/fullstack/fullstackM.jpg 1200w, styles/resources/certificates/fullstack/fullstackL.jpg 1200w, styles/resources/certificates/fullstack/fullstackXL.jpg 1600w" alt="">
+                    <img srcset="../assets/styles/resources/certificates/fullstack/fullstackXS.jpg 300w, ../assets/styles/resources/certificates/fullstack/fullstackS.jpg 400w, ../assets/styles/resources/certificates/fullstack/fullstackM.jpg 1200w, ../assets/styles/resources/certificates/fullstack/fullstackL.jpg 1200w, ../assets/styles/resources/certificates/fullstack/fullstackXL.jpg 1600w" alt="">
                 </picture>
                 <div class="card-title">
                     <p>Full-stack course</p>
@@ -138,7 +138,7 @@
             <p>© 2025 Yakiv Sapa. Built with HTML, CSS and JavaScript.</p>
         </footer>
     </section>
-    <script src="settings-script.js"></script>
-    <script src="modalCertificates.js"></script>
+    <script src="../assets/settings-script.js"></script>
+    <script src="../assets/modalCertificates.js"></script>
 </body>
 </html>

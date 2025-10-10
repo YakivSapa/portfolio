@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles/index-styles.css">
+    <link rel="stylesheet" href="../assets/styles/index-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
@@ -39,12 +39,12 @@
                 </div>
                 <div id="header-settings">
                     <button id="settings-button" aria-label="Settings">
-                        <img src="styles/svg/settings.svg">
+                        <img src="../assets/styles/svg/settings.svg">
                     </button>
                     <div id="settings-menu">
                         <div class="settings-submenu">
                             <div>
-                                <img src="styles/svg/theme.svg">
+                                <img src="../assets/styles/svg/theme.svg">
                                 <h4>Theme</h4>
                             </div>
                             <button id="active-link">Light theme</button>
@@ -54,14 +54,14 @@
                         <hr>
                         <div class="settings-submenu">
                             <div>
-                                <img src="styles/svg/language.svg">
+                                <img src="../assets/styles/svg/language.svg">
                                 <h4>Language</h4>
                             </div>
-                            <button id="active-link"><img src="styles/svg/languages/flag-uk.svg" class="languageImg">English</button>
-                            <button class="inactive-link"><img src="styles/svg/languages/flag-de.svg" class="languageImg">German</button>
-                            <button class="inactive-link"><img src="styles/svg/languages/flag-pl.svg" class="languageImg">Polish</button>
-                            <button class="inactive-link"><img src="styles/svg/languages/flag-ua.svg" class="languageImg">Ukrainian</button>
-                            <button class="inactive-link"><img src="styles/svg/languages/flag-rus.svg" class="languageImg">Russian</button>
+                            <button id="active-link"><img src="../assets/styles/svg/languages/flag-uk.svg" class="languageImg">English</button>
+                            <button onclick="window.location.href='../de/index.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-de.svg" class="languageImg">German</button>
+                            <button onclick="window.location.href='../pl/index.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-pl.svg" class="languageImg">Polish</button>
+                            <button onclick="window.location.href='../ua/index.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-ua.svg" class="languageImg">Ukrainian</button>
+                            <button onclick="window.location.href='../ru/index.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-ru.svg" class="languageImg">Russian</button>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                     <a href="certificates.html" class="inactive-link">My Certificates</a>
                 </div>
                 <div id="down-arrow">
-                    <img src="styles/svg/down-arrow.svg">
+                    <img src="../assets/styles/svg/down-arrow.svg">
                 </div>
             </main>
         </div>
@@ -184,7 +184,7 @@
             <p>© 2025 Yakiv Sapa. Built with HTML, CSS and JavaScript.</p>
         </footer>
     </section>
-    <script src="settings-script.js"></script>
-    <script src="arrow-script.js"></script>
+    <script src="../assets/settings-script.js"></script>
+    <script src="../assets/arrow-script.js"></script>
 </body>
 </html>

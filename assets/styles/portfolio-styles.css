@@ -95,7 +95,6 @@ header{
 #header-settings button{
     text-align: left;
     text-decoration: none;
-    display: inline-block;
     border: none;
     background-color: transparent;
     font-family: 'DM Serif Text';
@@ -135,6 +134,17 @@ header{
     margin: 0;
     padding-left: 0.5em;
     font-weight: 500;
+}
+#settings-menu .settings-submenu:nth-child(1){
+    margin-bottom: 1em;
+}
+.languageImg{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+.settings-submenu button{
+    display: flex;
 }
 
 /* Main Styles */
