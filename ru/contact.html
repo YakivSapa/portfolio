@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles/contact-styles.css">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../assets/styles/contact-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
@@ -24,59 +24,59 @@
             <span>Sapa</span>
         </div>
         <div id="header-links">
-            <a href="index.html" class="inactive-link">Home</a>
-            <a href="portfolio.html" class="inactive-link">Portfolio</a>
-            <a href="certificates.html" class="inactive-link">Certificates</a>
-            <a id="active-link">Contact</a>
+            <a href="index.html" class="inactive-link">Главная страница</a>
+            <a href="portfolio.html" class="inactive-link">Портфолио</a>
+            <a href="certificates.html" class="inactive-link">Сертификаты</a>
+            <a id="active-link">Контакты</a>
         </div>
-        <div id="header-settings" class="hidden">
+        <div id="header-settings">
             <button id="settings-button" aria-label="Settings">
-                <img src="styles/svg/settings.svg">
+                <img src="../assets/styles/svg/settings.svg">
             </button>
             <div id="settings-menu">
                 <div class="settings-submenu">
                     <div>
-                        <img src="styles/svg/theme.svg">
-                        <h4>Theme</h4>
+                        <img src="../assets/styles/svg/theme.svg">
+                        <h4>Цвет</h4>
                     </div>
-                    <button id="active-link">Light theme</button>
-                    <button class="inactive-link">Dark theme</button>
-                    <button class="inactive-link">Device default</button>
+                    <button id="active-link">Светлая тема</button>
+                    <button class="inactive-link">Тёмная тема</button>
+                    <button class="inactive-link">По умолчанию</button>
                 </div>
                 <hr>
                 <div class="settings-submenu">
                     <div>
-                        <img src="styles/svg/language.svg">
-                        <h4>Language</h4>
+                        <img src="../assets/styles/svg/language.svg">
+                        <h4>Язык</h4>
                     </div>
-                    <button id="active-link">English</button>
-                    <button class="inactive-link">German</button>
-                    <button class="inactive-link">Polish</button>
-                    <button class="inactive-link">Ukrainian</button>
-                    <button class="inactive-link">Russian</button>
+                    <button onclick="window.location.href='../en/contact.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-uk.svg" class="languageImg">Английский</button>
+                    <button onclick="window.location.href='../de/contact.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-de.svg" class="languageImg">Немецкий</button>
+                    <button onclick="window.location.href='../pl/contact.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-pl.svg" class="languageImg">Польский</button>
+                    <button onclick="window.location.href='../ua/contact.html'" class="inactive-link"><img src="../assets/styles/svg/languages/flag-ua.svg" class="languageImg">Украинский</button>
+                    <button id="active-link"><img src="../assets/styles/svg/languages/flag-ru.svg" class="languageImg">Русский</button>
                 </div>
             </div>
         </div>
             </header>
             <main>
         <div id="main-title">
-            <p>Get In Touch</p>
+            <p>Свяжитесь со мной</p>
         </div>
         <div id="contact-container">
             <div id="contact-text">
-                <p>If you're looking for collaboration, small chat or interested in hiring me - use the following contact details.</p>
+                <p>Если вы ищете сотрудничество, хотите пообщаться или заинтересованы в моем найме, воспользуйтесь следующими контактными данными.</p>
             </div>
             <div id="contact-mail">
                 <a href="mailto:sapa.yakiv@gmail.com" class="inactive-link">
-                    <img src="styles/svg/contact-svgs/email.svg">
-                    <p>Send me a message!</p>
+                    <img src="../assets/styles/svg/contact-svgs/email.svg">
+                    <p>Отправьте мне сообщение!</p>
                 </a>
             </div>
             <div id="contact-location">
                 <div id="location-row">
                     <a class="inactive-link" onclick="openIframe('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40857.376809646674!2d8.504892951583678!3d50.20626806579172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda87b97eb98ff%3A0x422435029b09cf0!2s61440%20Oberursel!5e0!3m2!1sen!2sde!4v1756738042864!5m2!1sen!2sde')">   
-                        <img src="styles/svg/contact-svgs/location.svg">
-                        <p>Oberursel, 61440, Germany</p>
+                        <img src="../assets/styles/svg/contact-svgs/location.svg">
+                        <p>Оберурзель, 61440, Германия</p>
                     </a>
                     <button id="closeButton" onclick="closeIframe()">&times;</button>
                 </div>
@@ -84,28 +84,28 @@
             </div>
             <div id="contact-links">
                 <a href="https://github.com/YakivSapa" class="inactive-link">
-                    <img src="styles/svg/contact-svgs/github.svg">
+                    <img src="../assets/styles/svg/contact-svgs/github.svg">
                 </a>
                 <a href="https://www.linkedin.com/in/yakiv-sapa/" class="inactive-link">
-                    <img src="styles/svg/contact-svgs/linkedin.svg">
+                    <img src="../assets/styles/svg/contact-svgs/linkedin.svg">
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100008246344163" class="inactive-link">
-                    <img src="styles/svg/contact-svgs/facebook.svg">
+                    <img src="../assets/styles/svg/contact-svgs/facebook.svg">
                 </a>
             </div>
             <a href="vcard.vcf" id="contact-vcard" class="inactive-link">
-                <img src="styles/svg/contact-svgs/vcf.svg">
-                <p>Download my contact card!</p>
+                <img src="../assets/styles/svg/contact-svgs/vcf.svg">
+                <p>Скачать мою визитную карточку!</p>
                 <span>.vcf</span>
             </a>
         </div>
             </main>
         </div>
         <footer class="light-text">
-        <p>© 2025 Yakiv Sapa. Built with HTML, CSS and JavaScript.</p>
+            <p>© 2025 Яков Сапа. Сайт был создан с помощью HTML, CSS и JavaScript.</p>
         </footer>
     </section>
-    <script src="settings-script.js"></script>
-    <script src="iframe.js"></script>
+    <script src="../assets/settings-script.js"></script>
+    <script src="../assets/iframe.js"></script>
 </body>
 </html>
