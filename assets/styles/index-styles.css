@@ -188,29 +188,22 @@ header{
     font-size: 1rem;
 }
 
-.knowledge-row{
-    margin: 0 0 1em 0;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    text-align: left;
-}
-.knowledge-row ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#skills-row{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.knowledge-row p{
-    margin: 0;
+.skillBox{
+    margin: .25em;
+    padding: .25em;
+    border-radius: 1em;
 }
-.knowledge-row li{
-    display: inline;
+.skillImage{
+    height: 4em;
+    width: 4em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
-/* .knowledge-row li:nth-child(n+2):before{
-    content: "|";
-    padding-right: ;
-} */
 
 #education-container div{
     display: grid;
