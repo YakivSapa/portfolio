@@ -194,15 +194,21 @@ header{
 }
 .skillBox{
     margin: .25em;
-    padding: .25em;
+    transition-duration: 0.25s;
     border-radius: 1em;
+}
+.skillBox:hover, .skillBox:focus{
+    transform: scale(1.2);
+    filter: brightness(1.1);
+    z-index: 10;    
 }
 .skillImage{
     height: 4em;
     width: 4em;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: center;
+    border-radius: 20px;
 }
 
 #education-container div{
