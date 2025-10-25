@@ -1,14 +1,14 @@
 let skills = {
-    html: {svg: "../assets/styles/svg/skills/html.svg", link: "#"},
-    css: {svg: "../assets/styles/svg/skills/css-3.svg", link: "#"},
-    bootstrap: {svg: "../assets/styles/svg/skills/bootstrap.svg", link: "#"},
-    javascript: {svg: "../assets/styles/svg/skills/javascript.svg", link: "#"},
-    typescript: {svg: "../assets/styles/svg/skills/typescript.svg", link: "#"},
-    react: {svg: "../assets/styles/svg/skills/react.svg", link: "#"},
-    jquery: {svg: "../assets/styles/svg/skills/jquery.svg", link: "#"},
-    php: {svg: "../assets/styles/svg/skills/php.svg", link: "#"},
-    mysql: {svg: "../assets/styles/svg/skills/mysql.svg", link: "#"},
-    git: {svg: "../assets/styles/svg/skills/git.svg", link: "#"}
+    html: {svg: "../assets/styles/svg/skills/html.svg", link: "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+    css: {svg: "../assets/styles/svg/skills/css-3.svg", link: "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+    bootstrap: {svg: "../assets/styles/svg/skills/bootstrap.svg", link: "https://getbootstrap.com"},
+    javascript: {svg: "../assets/styles/svg/skills/javascript.svg", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+    typescript: {svg: "../assets/styles/svg/skills/typescript.svg", link: "https://www.typescriptlang.org"},
+    react: {svg: "../assets/styles/svg/skills/react.svg", link: "https://react.dev"},
+    jquery: {svg: "../assets/styles/svg/skills/jquery.svg", link: "https://jquery.com"},
+    php: {svg: "../assets/styles/svg/skills/php.svg", link: "https://www.php.net"},
+    mysql: {svg: "../assets/styles/svg/skills/mysql.svg", link: "https://www.mysql.com"},
+    git: {svg: "../assets/styles/svg/skills/git.svg", link: "https://git-scm.com"}
 }
 
 let html = "";
