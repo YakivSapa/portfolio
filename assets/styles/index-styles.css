@@ -233,18 +233,27 @@ header{
     display: block;
 }
 
-#languages-container div{
+#languagesSection{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
 }
-#languages-container div div{
+.languageItem{
     display: grid;
-    grid-template-columns: 0.3fr 0.1fr 0.3fr;
-    text-align: center;
+    grid-template-columns: 0.5fr 1fr;
+    /* justify-content: space-around; */
 }
-#languages-container div div p{
-    margin: 0 0 1em 0;
+.languageName{
+    display: flex;
+    gap: 1vw;
+}
+.languageName img{
+    width: 5vw;
+    height: 5vh;
+    align-self: center;
+}
+.languageDescription{
+    text-align: center;
 }
 
 #main-links{
