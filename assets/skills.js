@@ -7,6 +7,8 @@ let skills = {
     react: {svg: "../assets/styles/svg/skills/react.svg", link: "https://react.dev"},
     jquery: {svg: "../assets/styles/svg/skills/jquery.svg", link: "https://jquery.com"},
     php: {svg: "../assets/styles/svg/skills/php.svg", link: "https://www.php.net"},
+    symfony: {svg: "../assets/styles/svg/skills/symfony.svg", link: "https://symfony.com"},
+    sqlite: {svg: "../assets/styles/svg/skills/sqlite.svg", link: "https://www.sqlite.org"},
     mysql: {svg: "../assets/styles/svg/skills/mysql.svg", link: "https://www.mysql.com"},
     git: {svg: "../assets/styles/svg/skills/git.svg", link: "https://git-scm.com"}
 }
